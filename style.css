@@ -38,6 +38,10 @@ input {
     color: darkred;
 }
 
+img {
+   cursor: pointer;
+}
+
 #title {
     text-align: center;
     color: white;
