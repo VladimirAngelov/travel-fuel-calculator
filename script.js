@@ -61,7 +61,7 @@ function languageChange(e) {
     if (e.target.id === 'en') {
         document.getElementById('title').innerText = 'Fuel calculator for travel'
         document.querySelector('input[name="distance"]').placeholder = 'Distance in km *'
-        document.querySelector('input[name="cost"]').placeholder = 'Fuel cost per 100km *'
+        document.querySelector('input[name="cost"]').placeholder = 'Fuel cost for 100km *'
         document.querySelector('input[name="pricePerLiter"]').placeholder = 'Fuel price per liter *'
         document.querySelector('input[name="peopleCount"]').placeholder = 'Passengers count'
         document.querySelector('button').textContent = 'Calculate'
