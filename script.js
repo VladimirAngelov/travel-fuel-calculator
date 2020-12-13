@@ -54,16 +54,16 @@ function calculate(e) {
 function languageChange(e) {
     if (e.target.id === 'en') {
         document.getElementById('title').innerText = 'Fuel calculator for travel'
-        document.querySelector('input[name="distance"]').placeholder = 'Distance in km'
-        document.querySelector('input[name="cost"]').placeholder = 'Fuel cost per 100km/h'
-        document.querySelector('input[name="pricePerLiter"]').placeholder = 'Fuel price per liter'
+        document.querySelector('input[name="distance"]').placeholder = 'Distance in km *'
+        document.querySelector('input[name="cost"]').placeholder = 'Fuel cost per 100km/h *'
+        document.querySelector('input[name="pricePerLiter"]').placeholder = 'Fuel price per liter *'
         document.querySelector('input[name="peopleCount"]').placeholder = 'Passengers count'
         document.querySelector('button').textContent = 'Calculate'
     } else if (e.target.id === 'bg') {
         document.getElementById('title').innerText = 'Калкулатор на гориво'
-        document.querySelector('input[name="distance"]').placeholder = 'Разстояние в километри'
-        document.querySelector('input[name="cost"]').placeholder = 'Разход за 100км'
-        document.querySelector('input[name="pricePerLiter"]').placeholder = 'Цена на горивото за литър'
+        document.querySelector('input[name="distance"]').placeholder = 'Разстояние в километри *'
+        document.querySelector('input[name="cost"]').placeholder = 'Разход за 100км *'
+        document.querySelector('input[name="pricePerLiter"]').placeholder = 'Цена на горивото за литър *'
         document.querySelector('input[name="peopleCount"]').placeholder = 'Брой пътници'
         document.querySelector('button').textContent = 'Сметни'
     }
