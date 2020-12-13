@@ -1,2 +1,2 @@
-# Calculate the price for a travel.
+# Fuel travel calculator
 https://vladimirangelov.github.io/travel-fuel-calculator/
