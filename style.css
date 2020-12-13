@@ -1,0 +1,65 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+button {
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    color: white;
+    cursor: pointer;
+}
+
+label {
+    margin-top: auto;
+
+}
+
+input {
+    width: 250px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.asterisks {
+    color: white;
+}
+
+#notification {
+    color: darkred;
+}
+
+#title {
+    text-align: center;
+    color: white;
+}
+
+#form {
+    margin-top: 20px;
+    height: 460px;
+}
+
+#submit-form {
+    margin-left: 40px;
+}
+
+#flags {
+    text-align: center;
+}
+
+#totalPrice {
+    color: white;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuel Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container" id="wrapper">
+    <div class="row">
+        <div class="col"></div>
+        <div id="form" class="col">
+
+            <h3 id="title">Fuel calculator for travel</h3>
+
+            <div id="flags">
+                <img id="bg" src="bulgaria-flag-icon-32.png" alt="">
+                <img id="en" src="united-kingdom-flag-icon-32.png" alt="">
+            </div>
+
+            <form id="submit-form">
+                <input placeholder="Distance in km" type="text" name="distance">
+                <span class="asterisks">*</span>
+
+                <input placeholder="Fuel cost per 100km/h" type="text" name="cost">
+                <span class="asterisks">*</span>
+
+                <input placeholder="Fuel price per liter" type="text" name="pricePerLiter">
+                <span class="asterisks">*</span>
+
+                <input placeholder="Passengers count" type="text" name="peopleCount">
+                <div id="notification"></div>
+                <button onclick="calculate(event)">Calculate</button>
+                <span id="totalPrice"></span>
+            </form>
+        </div>
+        <div class="col"></div>
+
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
