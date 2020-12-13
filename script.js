@@ -13,7 +13,7 @@ function calculate(e) {
     const button = document.querySelector('button').textContent;
     const notification = document.getElementById('notification');
 
-    if (distance && cost && pricePerLiter) {
+    if (distance > 0 && cost > 0 && pricePerLiter > 0) {
         document.querySelectorAll('input')
             .forEach(input => {
                 input.value = '';
