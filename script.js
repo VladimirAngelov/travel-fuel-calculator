@@ -1,3 +1,9 @@
+(() => {
+   if (window.screen.width > 800) {
+       document.getElementById('submit-form').style.marginLeft = '40px';
+   }
+})()
+
 function calculate(e) {
     e.preventDefault();
 
@@ -36,13 +42,13 @@ function calculate(e) {
         }
     } else {
         if (button === 'Calculate') {
-            notification.innerHTML = `All fields with * must be filled.`;
+            notification.innerHTML = `All fields with * must be valid.`;
 
             setTimeout(() => {
                 notification.innerHTML = '';
             }, 3000)
         } else {
-            notification.innerHTML = `Всички полета с * трябва да са попълнени.`;
+            notification.innerHTML = `Всички полета с * трябва да са валидни.`;
 
             setTimeout(() => {
                 notification.innerHTML = '';
@@ -67,6 +73,7 @@ function languageChange(e) {
         document.querySelector('input[name="peopleCount"]').placeholder = 'Брой пътници'
         document.querySelector('button').textContent = 'Сметни'
     }
+
 }
 
 const divElement = document.getElementById('form')
